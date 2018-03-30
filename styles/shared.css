@@ -1,0 +1,86 @@
+/* ---------------------------------------------------------------------------------------
+  SHARED CSS
+  ------------------------------------------------------------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+ font-family: 'Play', sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.text {
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.total-height {
+  height: 100%;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* ---------------------------------------------------------------------------------------
+  GRID
+  ------------------------------------------------------------------------------------- */
+
+.row, .row-v {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ align-items: center;
+ align-content: space-around;
+}
+
+.row-v {
+ flex-direction: column;
+}
+
+.row-center {
+  justify-content: center;
+  align-content: center;
+}
+
+/* ---------------------------------------------------------------------------------------
+  ANIMATIONS
+  ------------------------------------------------------------------------------------- */
+
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fadein 2s forwards;
+  animation: fadein 2s forwards;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

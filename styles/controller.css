@@ -1,0 +1,42 @@
+/* ---------------------------------------------------------------------------------------
+  CONTROLLER CSS
+  ------------------------------------------------------------------------------------- */
+body {
+
+}
+
+.no_pointer_events {
+  pointer-events: none;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.menu_margin {
+  margin-top: 40px;
+}
+
+.container {
+  width: 90%;
+  height:  100%;
+  margin: auto;
+}
+
+.value {
+  display: block;
+}
+
+/*
+  BUTTOS
+ */
+
+.buttons-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons-list li {
+  margin-bottom: 5px;
+}
