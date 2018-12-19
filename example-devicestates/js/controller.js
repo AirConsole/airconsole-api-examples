@@ -3,7 +3,9 @@ var airconsole = new AirConsole();
 airconsole.onReady = function() {};
 
 function setDeviceStateColor(color) {
-  // Sets the key - value: key, value
+  // Sets the device state (key - value)
+  // This device has now a device state property "color" with the value of color.
+  // Every other device (including the screen) gets notified about the change.
   airconsole.setCustomDeviceStateProperty("color", color);
   $("#data").html(color).css({ color: color });
 }
