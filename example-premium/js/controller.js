@@ -4,11 +4,14 @@
 var airconsole = new AirConsole();
 
 airconsole.onReady = function() {
-  setIsPremium();
+  // After AirConsole has been initialized,
+  // let's check the premium state of this device
+  setIsPremium(this.getDeviceId());
 };
 
 /*
  * Gets called when the device turns into premium
+ * or a premium device connects
  * @param {Number} device_id
  */
 airconsole.onPremium = function(device_id) {
@@ -28,7 +31,7 @@ function setIsPremium() {
 // BIND EVENTS
 // =======================================================================================
 
-// getPremium()
+// Call getPremium() to initiate the purchase process
 $("#btn-buy-hero").on("click", function() {
   airconsole.getPremium();
 });
