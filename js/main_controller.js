@@ -6,6 +6,10 @@ airconsole.onReady = function() {
 
 $(".app-button").on("click", function() {
   var path = $(this).attr("data-dir");
-  console.log("Path", path);
-  airconsole.navigateTo("./example-" + path);
+  if (path) {
+    console.log("Path", path);
+    airconsole.navigateTo("./example-" + path);
+  } else {
+    console.error("Path does not exist!", path);
+  }
 });
